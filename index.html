@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahsinul Refat | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #0f172a; --accent: #2563eb; }
+        html { scroll-behavior: smooth; }
+        .modal { transition: opacity 0.3s ease-in-out; }
+        .modal-content { max-height: 90vh; overflow-y: auto; }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .modal-content::-webkit-scrollbar { display: none; }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .modal-content { -ms-overflow-style: none;  scrollbar-width: none; }
+        .skill-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans leading-relaxed selection:bg-blue-200">
+
+    <nav class="fixed w-full z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-slate-900">TR<span class="text-blue-600">.</span></div>
+            <div class="hidden lg:flex space-x-8 font-bold text-xs uppercase tracking-widest text-slate-500">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#education" class="hover:text-blue-600 transition">Education</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#achievements" class="hover:text-blue-600 transition">Achievements</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="mailto:tahsinrefat2@gmail.com" class="bg-slate-900 text-white px-5 py-2 rounded hover:bg-blue-600 transition">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-[90vh] flex items-center pt-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">Computer Science & Engineering</span>
+                <h1 class="text-5xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tight leading-tight">
+                    Engineering <br><span class="text-blue-600">Intelligence.</span>
+                </h1>
+                <p class="text-xl text-slate-500 mb-8 max-w-lg">
+                    I am <span class="font-bold text-slate-900">Tahsinul Refat</span>. I build intelligent systems that bridge the gap between complex data and human experience. Specializing in Machine Learning, Logic Design, and FinTech solutions.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#projects" class="bg-slate-900 text-white px-8 py-3 rounded-lg font-bold hover:translate-y-[-2px] transition shadow-lg shadow-blue-500/20">View Portfolio</a>
+                    <a href="#education" class="border border-slate-300 px-8 py-3 rounded-lg font-bold hover:bg-slate-50 transition">My Background</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center" data-aos="fade-left">
+                <div class="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-slate-100 shadow-2xl relative z-10">
+                    <img src="photo.jpeg" alt="Tahsinul Refat" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-0 right-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30 -z-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Why Hire Me?</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">I bridge the gap between technical complexity and business value.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12 text-center md:text-left">
+                <div data-aos="fade-up">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6 mx-auto md:mx-0"><i class="fas fa-code text-xl"></i></div>
+                    <h3 class="font-bold text-lg mb-2">For Engineering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Passionate about scalable architectures, API-driven systems, and clean, efficient code that solves real-world bottlenecks.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-6 mx-auto md:mx-0"><i class="fas fa-microscope text-xl"></i></div>
+                    <h3 class="font-bold text-lg mb-2">For Research</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Award-winning innovator in wearable AI and predictive analytics, focused on data reliability and human-centric design.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-6 mx-auto md:mx-0"><i class="fas fa-chart-line text-xl"></i></div>
+                    <h3 class="font-bold text-lg mb-2">For Business/Banking</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Analytical mindset geared toward process automation, customer journey mapping, and financial data insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center mb-16" data-aos="fade-right">
+                <div class="w-12 h-1 bg-blue-600 mr-4"></div>
+                <h2 class="text-4xl font-black tracking-tight text-slate-900">Academic Foundations</h2>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 ml-4 md:ml-12 pl-10 space-y-20">
+                
+                <div class="relative" data-aos="fade-up">
+                    <div class="absolute -left-[51px] top-0 w-10 h-10 bg-white border-4 border-blue-600 rounded-full flex items-center justify-center text-blue-600 shadow-lg shadow-blue-100">
+                        <i class="fas fa-university text-xs"></i>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2">
+                            <span class="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-2 block">Undergraduate Study</span>
+                            <h3 class="text-3xl font-bold text-slate-900 mb-2">B.Sc. in Computer Science and Engineering</h3>
+                            <p class="text-xl text-slate-600 mb-4 font-semibold">North South University, Bangladesh</p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-blue-50 border border-blue-100 px-4 py-2 rounded-xl text-sm font-bold text-blue-800">CGPA: 3.22 / 4.00</span>
+                                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-xl text-sm font-bold text-slate-700">Class of 2025</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -left-[51px] top-0 w-10 h-10 bg-white border-4 border-slate-300 rounded-full flex items-center justify-center text-slate-400 shadow-sm">
+                        <i class="fas fa-graduation-cap text-xs"></i>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2">
+                            <span class="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-2 block">Higher Secondary</span>
+                            <h3 class="text-2xl font-bold text-slate-900">HSC (Science)</h3>
+                            <p class="text-lg text-slate-600 mb-2">Major General Mahmudul Hasan Adarsha College, Tangail</p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-blue-50 border border-blue-100 px-4 py-2 rounded-xl text-sm font-bold text-blue-800">GPA: 4.00 / 5.00</span>
+                                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-xl text-sm font-bold text-slate-700">Class of 2019</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -left-[51px] top-0 w-10 h-10 bg-white border-4 border-slate-300 rounded-full flex items-center justify-center text-slate-400 shadow-sm">
+                        <i class="fas fa-school text-xs"></i>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2">
+                            <span class="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-2 block">Secondary School</span>
+                            <h3 class="text-2xl font-bold text-slate-900">SSC (Science)</h3>
+                            <p class="text-lg text-slate-600 mb-2">Bindubasini Govt. Boys' High School</p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-blue-50 border border-blue-100 px-4 py-2 rounded-xl text-sm font-bold text-blue-800">GPA: 5.00 / 5.00</span>
+                                <span class="bg-slate-50 border border-slate-200 px-4 py-2 rounded-xl text-sm font-bold text-slate-700">Class of 2017</span>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-12 text-center text-slate-900">Technical Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 skill-card transition-all" data-aos="fade-up">
+                    <h3 class="text-blue-600 font-bold mb-6 flex items-center"><i class="fas fa-brain mr-2"></i> Data & AI</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Python</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Machine Learning</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Deep Learning</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Pandas</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">NLTK</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 skill-card transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-purple-600 font-bold mb-6 flex items-center"><i class="fas fa-laptop-code mr-2"></i> Web & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">HTML/CSS</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">JavaScript</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">PHP</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">MySQL</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 skill-card transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-emerald-600 font-bold mb-6 flex items-center"><i class="fas fa-microchip mr-2"></i> Hardware & Other</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Arduino</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">IoT</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Logisim</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium">Technical Writing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="professional-skills" class="py-24 px-6 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-4 text-center text-slate-900">Professional Skills</h2>
+            <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto">Core competencies that allow me to lead teams, drive projects, and solve business problems.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="prof-card group p-6 bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition duration-300 border border-transparent hover:border-slate-100 text-center" data-aos="fade-up">
+                    <div class="prof-icon w-14 h-14 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4 transition duration-300">
+                        <i class="fas fa-users-cog text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Leadership & Mgt.</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Proven experience leading Capstone project teams. Skilled in task delegation, conflict resolution, and agile timeline management.
+                    </p>
+                </div>
+
+                <div class="prof-card group p-6 bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition duration-300 border border-transparent hover:border-slate-100 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="prof-icon w-14 h-14 mx-auto bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-4 transition duration-300">
+                        <i class="fas fa-search-dollar text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Research & Analysis</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Strong background in statistical analysis and pattern recognition. Capable of translating raw data into actionable business insights.
+                    </p>
+                </div>
+
+                <div class="prof-card group p-6 bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition duration-300 border border-transparent hover:border-slate-100 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="prof-icon w-14 h-14 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-4 transition duration-300">
+                        <i class="fas fa-comments text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Communication</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Experienced in Technical Writing and Public Speaking. Able to articulate complex technical concepts to non-technical stakeholders clearly.
+                    </p>
+                </div>
+
+                <div class="prof-card group p-6 bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition duration-300 border border-transparent hover:border-slate-100 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="prof-icon w-14 h-14 mx-auto bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mb-4 transition duration-300">
+                        <i class="fas fa-puzzle-piece text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Critical Thinking</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Analytical approach to problem-solving. Skilled in identifying root causes, optimizing processes, and making data-backed decisions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-24 px-6 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-12 text-center" data-aos="fade-up">Key Achievements</h2>
+            
+            <div class="flex justify-center" data-aos="zoom-in">
+                <div class="relative group w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl bg-slate-800 border border-slate-700">
+                    <div class="grid md:grid-cols-2">
+                        <div class="h-64 md:h-auto overflow-hidden">
+                            <img src="ach.jpeg"
+                                 alt="Innovation Challenge" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        </div>
+                        <div class="p-8 flex flex-col justify-center">
+                            <div class="text-blue-400 font-bold tracking-widest text-xs uppercase mb-2">Season 16 • Apr 2025</div>
+                            <h3 class="text-3xl font-black mb-2">1st Runner Up</h3>
+                            <h4 class="text-xl font-bold text-slate-300 mb-4">INNOVATION CHALLENGE</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Recognized at the North South University ECE Capstone Design Project Showcase for developing a wearable AI health system.
+                            </p>
+                            <div class="flex items-center gap-2 text-xs font-bold bg-slate-700 w-fit px-3 py-1 rounded">
+                                <i class="fas fa-trophy text-yellow-400"></i> Award Winner
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-8 text-center text-slate-900">Selected Projects</h2>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+                <button onclick="filterProjects('all')" class="filter-btn active px-6 py-2 rounded-full border border-slate-300 font-bold text-sm hover:bg-blue-600 hover:text-white hover:border-blue-600 transition bg-blue-600 text-white">All Projects</button>
+                <button onclick="filterProjects('ml')" class="filter-btn px-6 py-2 rounded-full border border-slate-300 font-bold text-sm text-slate-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition">ML/DL</button>
+                <button onclick="filterProjects('web')" class="filter-btn px-6 py-2 rounded-full border border-slate-300 font-bold text-sm text-slate-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition">Web Dev</button>
+                <button onclick="filterProjects('other')" class="filter-btn px-6 py-2 rounded-full border border-slate-300 font-bold text-sm text-slate-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition">Hardware/Other</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="ml" onclick="openModal('postureaware-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="posture.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 z-20 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">ML/IoT</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">PostureAware</h3>
+                        <p class="text-slate-500 text-sm">Multimodal Deep Learning Approach for Pain Assessment</p>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="ml" onclick="openModal('youtube-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="yt.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">ML</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">YouTube Success Prediction</h3>
+                        <p class="text-slate-500 text-sm">Machine Learning model to classify video success metrics.</p>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="ml" onclick="openModal('skincancer-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="SkinCancer.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">Deep Learning</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Skin Cancer Classification</h3>
+                        <p class="text-slate-500 text-sm">Hybrid Deep Learning with Clinical Metadata.</p>
+                    </div>
+                </div>
+
+                 <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="ml" onclick="openModal('insurance-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1171&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">Regression</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Insurance Cost Prediction</h3>
+                        <p class="text-slate-500 text-sm">Predicting medical costs using demographic factors.</p>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="ml" onclick="openModal('astar-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="Astar.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">Algorithms</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Optimized A* Algorithm</h3>
+                        <p class="text-slate-500 text-sm">Weighted Heuristics for efficient Pathfinding.</p>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="web" onclick="openModal('virtualexam-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="Virtual.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded">Web Dev</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">VirtualExam</h3>
+                        <p class="text-slate-500 text-sm">Comprehensive online examination system.</p>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="web" onclick="openModal('clubmanagement-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1605&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded">Web Dev</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">ClubManagementBD</h3>
+                        <p class="text-slate-500 text-sm">Complete sports club management system.</p>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="other" onclick="openModal('sap1-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="sap1.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-bold px-2 py-1 rounded">Hardware</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">SAP-1 Microcomputer</h3>
+                        <p class="text-slate-500 text-sm">Digital logic implementation in Logisim.</p>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden border border-slate-100" data-category="other" onclick="openModal('obstaclecar-modal')">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="obstacle1.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-bold px-2 py-1 rounded">Robotics</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Obstacle Avoiding Car</h3>
+                        <p class="text-slate-500 text-sm">Autonomous vehicle with ultrasonic sensors.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white text-center border-t border-slate-200">
+        <h2 class="text-xl font-bold mb-2">Ready to Collaborate?</h2>
+        <p class="text-slate-500 mb-6">Currently seeking opportunities in Data Science, Software Engineering & Banking.</p>
+        <div class="flex justify-center space-x-6 mb-8">
+            <a href="mailto:tahsinrefat2@gmail.com" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-900 hover:text-white transition"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+8801832433260" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-900 hover:text-white transition"><i class="fas fa-phone"></i></a>
+            <a href="#" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-900 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-900 hover:text-white transition"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">© 2025 Tahsinul Refat. All Rights Reserved.</p>
+    </footer>
+
+    <div id="postureaware-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">PostureAware</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Multimodal Deep Learning & IoT</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Project Overview</h3>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Developed a multimodal deep learning model combining CNN-LSTM for time-series sensor data and MLP for user metadata to predict pain intensity, frequency, and location among garment workers. The system uses wearable sensors to monitor posture and movement patterns.
+                </p>
+
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Technical Details</h3>
+                <ul class="list-disc list-inside text-slate-600 mb-6 space-y-1">
+                    <li>CNN layers for spatial feature extraction</li>
+                    <li>LSTM layers for temporal pattern recognition</li>
+                    <li>MLP branch for demographic metadata</li>
+                    <li>Fusion layer for multimodal inputs</li>
+                </ul>
+
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Results</h3>
+                <p class="text-slate-600 mb-6">Achieved <span class="font-bold text-slate-900">87% accuracy</span> in pain intensity prediction and 82% in pain location classification.</p>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">TensorFlow</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Python</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Pandas</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="youtube-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="yt1.png" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">YouTube Video Success</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Predictive Analytics & ML</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">Developed a predictive pipeline to classify Bangla YouTube video success using a self-curated dataset from YouTube Data API V3 (16,000+ videos).</p>
+
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Technical Details</h3>
+                <ul class="list-disc list-inside text-slate-600 mb-6 space-y-1">
+                    <li>Custom YouTube API pipeline</li>
+                    <li>Feature engineering for metrics</li>
+                    <li>Comparative analysis of ML classifiers</li>
+                </ul>
+
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Results</h3>
+                <p class="text-slate-600 mb-6">XGBoost achieved the best performance with <span class="font-bold text-slate-900">78% accuracy</span> in classifying videos into success categories.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">XGBoost</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Scikit-learn</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skincancer-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="SkinCancer.png" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">Skin Cancer Classification</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Medical AI</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">Employed ISIC dataset (10,000+ images) for binary classification. The hybrid model combines visual analysis of dermatoscopic images with clinical patient data.</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Results</h3>
+                <p class="text-slate-600 mb-6">Achieved <span class="font-bold text-slate-900">92% accuracy</span>, outperforming dermatologist benchmarks on the same dataset. Metadata integration improved performance by 8%.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Keras</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">OpenCV</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div id="insurance-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1171&q=80" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">Insurance Cost Prediction</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Regression Analysis</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">Constructed a regression model to predict medical insurance costs based on demographic and medical factors.</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Results</h3>
+                <p class="text-slate-600 mb-6">Achieved an <span class="font-bold text-slate-900">R² score of 0.87</span>. Identified smoking status and BMI as significant cost drivers.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">XGBoost</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">SHAP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="astar-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="Astar.png" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">Optimized A* Algorithm</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Algorithmic Optimization</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">Comparative analysis of the classic A* algorithm vs. an enhanced variant employing weighted heuristics and early stopping techniques.</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Results</h3>
+                <p class="text-slate-600 mb-6">The weighted heuristic approach reduced computation time by <span class="font-bold text-slate-900">35%</span> while maintaining 98% of path optimality.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Python</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">PyGame</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="virtualexam-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="Virtual.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">VirtualExam</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Full Stack Web Application</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">A comprehensive online examination system designed to streamline creating, managing, and conducting exams. Features include automated grading and secure session management.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">PHP</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">MySQL</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div id="clubmanagement-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1605&q=80" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">ClubManagementBD</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Management Information System</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">A sports club management system providing CRUD operations for club members, teams, tournaments, and real-time score tracking.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">PHP</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sap1-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="sap1.png" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">SAP-1 Microcomputer</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Digital Logic & Architecture</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">Implementation of the SAP-1 (Simple as Possible) microcomputer in Logisim. Demonstrates core Von Neumann architecture including PC, MAR, RAM, IR, and ALU components.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Logisim</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Assembly</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="obstaclecar-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden opacity-0 pointer-events-none" onclick="closeModal(this)">
+        <div class="modal-content bg-white w-full max-w-2xl m-4 rounded-2xl shadow-2xl relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal(this.closest('.modal'))" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="h-64 overflow-hidden">
+                <img src="obstacle.png" class="w-full h-full object-cover">
+            </div>
+            <div class="p-8">
+                <h2 class="text-3xl font-black text-slate-900 mb-1">Obstacle Avoiding Car</h2>
+                <p class="text-blue-600 font-bold text-sm mb-6">Robotics & Embedded Systems</p>
+                
+                <h3 class="font-bold uppercase text-xs tracking-widest text-slate-400 mb-2">Overview</h3>
+                <p class="text-slate-600 mb-6">Autonomous vehicle using Arduino Uno R3, HC SR04 ultrasonic sensors, and L293D Motor Driver. Capable of intelligent environment scanning and path correction.</p>
+                
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">C++</span>
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold">Arduino</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // --- FILTERING LOGIC ---
+        function filterProjects(category) {
+            // Update Buttons
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white', 'border-blue-600');
+                btn.classList.add('text-slate-600');
+                if (btn.innerText.toLowerCase().includes(category) || (category === 'all' && btn.innerText.includes('All'))) {
+                    btn.classList.add('bg-blue-600', 'text-white', 'border-blue-600');
+                    btn.classList.remove('text-slate-600');
+                }
+            });
+
+            // Filter Cards
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    // Re-trigger AOS for the new layout
+                    setTimeout(() => card.classList.add('aos-animate'), 50);
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // --- MODAL LOGIC ---
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if(modal) {
+                modal.classList.remove('hidden', 'opacity-0', 'pointer-events-none');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        function closeModal(modal) {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 300);
+        }
+    </script>
+</body>
+</html>
